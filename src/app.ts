@@ -1,12 +1,12 @@
 import express from 'express'
 import cookieParser from 'cookie-parser'
-import apiRoutes from './routes/api-routes.js'
+import apiRoutes from './routes/api-routes'
 import helmet from 'helmet'
-import generateRequestId from './middleware/generate-request-id.js'
+import generateRequestId from './middleware/generate-request-id'
 import cors from 'cors'
-import corsConfig from './config/cors.js'
-import globalErrorHandler from './middleware/global-error-handler.js'
-import routeNotFoundHandler from './middleware/route-not-found-handler.js'
+import corsConfig from './config/cors'
+import globalErrorHandler from './middleware/global-error-handler'
+import routeNotFoundHandler from './middleware/route-not-found-handler'
 import path from 'path'
 
 const app = express()

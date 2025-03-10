@@ -2,7 +2,7 @@ import {
     TApiResponse,
     TApiResponseError,
     TApiResponseMeta
-} from '../types/api-response.js'
+} from '../types/api-response'
 
 export function sendApiErrorResponse(
     errorType: string,

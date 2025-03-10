@@ -1,6 +1,6 @@
 import { Request } from 'express'
-import { TApiResponseMeta } from '../types/api-response.js'
-import { requestTypesSchemas } from '../validations/enumValidator.js'
+import { TApiResponseMeta } from '../types/api-response'
+import { requestTypesSchemas } from '../validations/enumValidator'
 
 export function getResponseMetaData(req: Request): TApiResponseMeta {
     const { data, success, error } = requestTypesSchemas.safeParse(req.method)

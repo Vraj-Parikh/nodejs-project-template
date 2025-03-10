@@ -1,5 +1,5 @@
 import { Response } from 'express'
-import { TApiResponse, TApiResponseMeta } from '../types/api-response.js'
+import { TApiResponse, TApiResponseMeta } from '../types/api-response'
 
 export function sendApiDataResponse(
     res: Response,

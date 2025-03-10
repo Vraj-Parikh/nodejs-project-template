@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
-import { getResponseMetaData } from '../../../utils/get-response-meta-data.js'
-import { sendApiDataResponse } from '../../../utils/api-data-response.js'
-import { successMessage } from '../../../constants/success-message.js'
+import { getResponseMetaData } from '../../../utils/get-response-meta-data'
+import { sendApiDataResponse } from '../../../utils/api-data-response'
+import { successMessage } from '../../../constants/success-message'
 
 export function loginHandler(req: Request, res: Response) {
     const success = false

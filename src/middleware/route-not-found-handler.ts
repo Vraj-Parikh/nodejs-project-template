@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express'
-import { errorMessage } from '../constants/error-message.js'
-import ApiErrorResponse from '../utils/api-error-response.js'
-import { getResponseMetaData } from '../utils/get-response-meta-data.js'
+import { errorMessage } from '../constants/error-message'
+import ApiErrorResponse from '../utils/api-error-response'
+import { getResponseMetaData } from '../utils/get-response-meta-data'
 
 export default function routeNotFoundHandler(
     req: Request,

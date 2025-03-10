@@ -1,6 +1,6 @@
-import app from './app.js'
-import envParsed from './constants/env-parsed.js'
-import logger from './utils/logger.js'
+import app from './app'
+import envParsed from './constants/env-parsed'
+import logger from './utils/logger'
 
 const server = app.listen(envParsed.PORT, '', (error) => {
     if (error) {

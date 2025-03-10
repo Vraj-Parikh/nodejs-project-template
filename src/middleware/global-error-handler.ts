@@ -1,8 +1,8 @@
 import { Request, Response } from 'express'
-import ApiErrorResponse from '../utils/api-error-response.js'
-import { errorMessage } from '../constants/error-message.js'
-import { getResponseMetaData } from '../utils/get-response-meta-data.js'
-import logger from '../utils/logger.js'
+import ApiErrorResponse from '../utils/api-error-response'
+import { errorMessage } from '../constants/error-message'
+import { getResponseMetaData } from '../utils/get-response-meta-data'
+import logger from '../utils/logger'
 
 export default function globalErrorHandler<T extends Error>(
     error: T,
