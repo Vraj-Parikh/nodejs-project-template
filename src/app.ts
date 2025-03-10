@@ -13,7 +13,7 @@ const app = express()
 
 // middlewares
 app.use(express.json({ limit: '50kb' }))
-app.use(express.static(path.join(import.meta.dirname, '../', 'public')))
+app.use(express.static(path.join(__dirname, '../', 'public')))
 app.use(cookieParser())
 app.use(cors(corsConfig))
 app.use(helmet())

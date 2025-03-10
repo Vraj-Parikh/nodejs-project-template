@@ -79,12 +79,7 @@ const fileTransport = (): Array<FileTransportInstance> => {
         new transports.File({
             level: 'info',
             format: format.combine(format.timestamp(), fileLogFormat),
-            filename: path.join(
-                import.meta.dirname,
-                '../../',
-                'logs',
-                logFileName
-            )
+            filename: path.join(__dirname, '../../', 'logs', logFileName)
         })
     ]
 }
